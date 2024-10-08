@@ -4,4 +4,4 @@ import json
 
 with open("data/American.json", "r") as f:
     data = json.load(f)
-    print(data["businesses"][0])
+    print(len(data["businesses"]))
