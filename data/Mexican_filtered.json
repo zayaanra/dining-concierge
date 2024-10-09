@@ -1,0 +1,556 @@
+{
+    "businesses": [
+        {
+            "id": "7Yh4Zp-l3is-4V9MrDoAIw",
+            "name": "Lolita",
+            "address": "45 W 45th St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.756371412646445,
+                "longitude": -73.9811027
+            },
+            "review_count": 45,
+            "rating": 4.4,
+            "zip_code": "10036"
+        },
+        {
+            "id": "Wx6lMnEh7dCmX-9PQF1Ifw",
+            "name": "Toloache 50",
+            "address": "251 West 50th St, New York, NY 10012",
+            "coordinates": {
+                "latitude": 40.762227,
+                "longitude": -73.9856178382696
+            },
+            "review_count": 2317,
+            "rating": 4.0,
+            "zip_code": "10012"
+        },
+        {
+            "id": "AoObdns-Y8YberOURhsosQ",
+            "name": "Chica & The Don",
+            "address": "24 E 21st St, New York, NY 10010",
+            "coordinates": {
+                "latitude": 40.73937189999999,
+                "longitude": -73.98902559999999
+            },
+            "review_count": 27,
+            "rating": 4.7,
+            "zip_code": "10010"
+        },
+        {
+            "id": "Xjswj531-FkRZPpcccU6kQ",
+            "name": "Vida Verde",
+            "address": "248 W 55th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.7649503286729,
+                "longitude": -73.9828372257363
+            },
+            "review_count": 1707,
+            "rating": 4.2,
+            "zip_code": "10019"
+        },
+        {
+            "id": "0ksKKrgHt-6xCCHfTlLcoA",
+            "name": "t\u00e1n",
+            "address": "209 E 49th St, New York, NY 10017",
+            "coordinates": {
+                "latitude": 40.75502324994503,
+                "longitude": -73.97048579999999
+            },
+            "review_count": 174,
+            "rating": 3.9,
+            "zip_code": "10017"
+        },
+        {
+            "id": "kBpYAEbDHlf-yFjmUBYhlw",
+            "name": "Cinco de Mayo",
+            "address": "43 W 55th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76256094905769,
+                "longitude": -73.97674246674985
+            },
+            "review_count": 12,
+            "rating": 4.6,
+            "zip_code": "10019"
+        },
+        {
+            "id": "8SdKtlwT9vcowN4veZ8Sjw",
+            "name": "Bar Mexicana",
+            "address": "127A W 43rd St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.7562,
+                "longitude": -73.98496
+            },
+            "review_count": 17,
+            "rating": 4.5,
+            "zip_code": "10036"
+        },
+        {
+            "id": "6Ct7OeTRn4caY9g0swFBsw",
+            "name": "La Contenta",
+            "address": "102 Norfolk St, New York, NY 10002",
+            "coordinates": {
+                "latitude": 40.71873,
+                "longitude": -73.98691
+            },
+            "review_count": 942,
+            "rating": 4.5,
+            "zip_code": "10002"
+        },
+        {
+            "id": "PqqnNrUtU7XTKQvUM4cyqQ",
+            "name": "Bar Verde",
+            "address": "65 2nd Ave, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.7260849061034,
+                "longitude": -73.9897361397743
+            },
+            "review_count": 468,
+            "rating": 4.4,
+            "zip_code": "10003"
+        },
+        {
+            "id": "xWLSJOiN1mMRHmBmHyjAfw",
+            "name": "Mad Dog & Beans Mexican Cantina",
+            "address": "5 E 38th St, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.7508568,
+                "longitude": -73.98193349999998
+            },
+            "review_count": 714,
+            "rating": 3.9,
+            "zip_code": "10016"
+        },
+        {
+            "id": "SeI-nIE1Ab5U53mB_e-1KQ",
+            "name": "Soledad",
+            "address": "1825 2nd Ave, New York, NY 10128",
+            "coordinates": {
+                "latitude": 40.78336,
+                "longitude": -73.94796
+            },
+            "review_count": 36,
+            "rating": 4.7,
+            "zip_code": "10128"
+        },
+        {
+            "id": "dEOv8_ivdHp85OK_TDQh_g",
+            "name": "Da Andrea - Chelsea",
+            "address": "160 8th Ave, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.742041,
+                "longitude": -74.000467
+            },
+            "review_count": 313,
+            "rating": 4.7,
+            "zip_code": "10011"
+        },
+        {
+            "id": "YFL1rAdlv7J0cswHVhvCtQ",
+            "name": "Ruta Oaxaca Mexican Cuisine",
+            "address": "35-03 Broadway, Astoria, NY 11106",
+            "coordinates": {
+                "latitude": 40.76058,
+                "longitude": -73.92182
+            },
+            "review_count": 316,
+            "rating": 4.5,
+            "zip_code": "11106"
+        },
+        {
+            "id": "IfIyjm4SfORGYPbaAWST3g",
+            "name": "MEXiCUE",
+            "address": "225 5th Ave, New York, NY 10010",
+            "coordinates": {
+                "latitude": 40.743617,
+                "longitude": -73.987867
+            },
+            "review_count": 731,
+            "rating": 4.0,
+            "zip_code": "10010"
+        },
+        {
+            "id": "4UxmxAqehEIh7fYrzUEA7A",
+            "name": "Tacovision",
+            "address": "244 E 53rd St, New York, NY 10004",
+            "coordinates": {
+                "latitude": 40.7568200311153,
+                "longitude": -73.9678929001093
+            },
+            "review_count": 459,
+            "rating": 4.1,
+            "zip_code": "10004"
+        },
+        {
+            "id": "CoSXktG_8Q_c3WD2CB4GuA",
+            "name": "Dos Caminos",
+            "address": "480 Lexington Ave At The Corner Of Avenue & East 46th Street, New York, NY 10167",
+            "coordinates": {
+                "latitude": 40.75423281781175,
+                "longitude": -73.97427953549227
+            },
+            "review_count": 78,
+            "rating": 3.2,
+            "zip_code": "10167"
+        },
+        {
+            "id": "4GPZAkK7M9ObDBsgMq7JSA",
+            "name": "El Gallo Taqueria",
+            "address": "609 9th Ave, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.75933,
+                "longitude": -73.99219
+            },
+            "review_count": 49,
+            "rating": 4.0,
+            "zip_code": "10036"
+        },
+        {
+            "id": "BsDu_kup3lJ2QHb-Botpeg",
+            "name": "Covacha",
+            "address": "368 Columbus Ave, New York, NY 10023",
+            "coordinates": {
+                "latitude": 40.78110489839311,
+                "longitude": -73.97644500326436
+            },
+            "review_count": 233,
+            "rating": 4.1,
+            "zip_code": "10023"
+        },
+        {
+            "id": "PGpCaNkB1meojnbgRmb2gQ",
+            "name": "Buena Vista Restaurant & Bar",
+            "address": "536 9th Ave, New York, NY 10018",
+            "coordinates": {
+                "latitude": 40.75686,
+                "longitude": -73.99356
+            },
+            "review_count": 433,
+            "rating": 4.6,
+            "zip_code": "10018"
+        },
+        {
+            "id": "UjBZR0Vyl5zpwDVkOvNceQ",
+            "name": "Casa Carmen",
+            "address": "5 W 21st St, New York, NY 10010",
+            "coordinates": {
+                "latitude": 40.74071727271747,
+                "longitude": -73.99106050000002
+            },
+            "review_count": 26,
+            "rating": 4.3,
+            "zip_code": "10010"
+        },
+        {
+            "id": "PAJdNrD4HFBN16OAFeDx4A",
+            "name": "Ponche Taqueria & Cantina",
+            "address": "420 W 49th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76319,
+                "longitude": -73.99045
+            },
+            "review_count": 579,
+            "rating": 4.1,
+            "zip_code": "10019"
+        },
+        {
+            "id": "SULHf6nGQ8sK0UpG1XU30w",
+            "name": "Los Tacos No.1",
+            "address": "229 W 43rd St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.7575067,
+                "longitude": -73.9877717
+            },
+            "review_count": 3193,
+            "rating": 4.7,
+            "zip_code": "10036"
+        },
+        {
+            "id": "ihzI-4yGesoQuAoIocao8g",
+            "name": "Tacuba Hell's Kitchen",
+            "address": "802 9th Ave, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76545,
+                "longitude": -73.98729
+            },
+            "review_count": 862,
+            "rating": 3.8,
+            "zip_code": "10019"
+        },
+        {
+            "id": "_2jMPuiK-7nLepFdPu2TTQ",
+            "name": "345 Cantina",
+            "address": "345 E 6th St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.72665,
+                "longitude": -73.98651
+            },
+            "review_count": 42,
+            "rating": 4.5,
+            "zip_code": "10003"
+        },
+        {
+            "id": "a2BkT6uUKDpzhLalkksJsg",
+            "name": "Tacombi",
+            "address": "202 E 70th St, New York, NY 10021",
+            "coordinates": {
+                "latitude": 40.768036983514506,
+                "longitude": -73.96119122060036
+            },
+            "review_count": 196,
+            "rating": 4.1,
+            "zip_code": "10021"
+        },
+        {
+            "id": "qnXMxa7WokNT_0fYCGT38w",
+            "name": "Five Star Mexican Taco Grill",
+            "address": "451 Lexington Ave, New York, NY 10017",
+            "coordinates": {
+                "latitude": 40.7531734,
+                "longitude": -73.9744752
+            },
+            "review_count": 13,
+            "rating": 4.3,
+            "zip_code": "10017"
+        },
+        {
+            "id": "vwrbegSwat5VrGBr9g_85Q",
+            "name": "Zaragoza",
+            "address": "215 Avenue A, New York, NY 10009",
+            "coordinates": {
+                "latitude": 40.73000695743691,
+                "longitude": -73.98084516882041
+            },
+            "review_count": 2,
+            "rating": 4.5,
+            "zip_code": "10009"
+        },
+        {
+            "id": "kn9rgR4KlvyTTi-s76OIaQ",
+            "name": "Toloache 82nd",
+            "address": "166 E 82nd St, New York, NY 10028",
+            "coordinates": {
+                "latitude": 40.776483,
+                "longitude": -73.956708
+            },
+            "review_count": 525,
+            "rating": 3.9,
+            "zip_code": "10028"
+        },
+        {
+            "id": "IyxW7CCYYUG8H0Pm7nhnYQ",
+            "name": "Quique Crudo",
+            "address": "27 Bedford St, New York, NY 10012",
+            "coordinates": {
+                "latitude": 40.72916800586558,
+                "longitude": -74.0037431
+            },
+            "review_count": 32,
+            "rating": 4.8,
+            "zip_code": "10012"
+        },
+        {
+            "id": "U6l20gH8YuOJMO8vF6_Ufw",
+            "name": "Jajaja Mexicana",
+            "address": "450 W 33rd St, Whole Foods",
+            "coordinates": {
+                "latitude": 40.752826939147255,
+                "longitude": -73.99968461876813
+            },
+            "review_count": 84,
+            "rating": 4.4,
+            "zip_code": "10001"
+        },
+        {
+            "id": "WqjqHMozyW42XLTtLnKGag",
+            "name": "La Pulperia 44th HK",
+            "address": "623 9th Ave, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.7599217,
+                "longitude": -73.991841
+            },
+            "review_count": 928,
+            "rating": 4.2,
+            "zip_code": "10036"
+        },
+        {
+            "id": "EHUNrnIgnhwTnpOm3gEESg",
+            "name": "Tacuba",
+            "address": "35-01 36th St, Astoria, NY 11106",
+            "coordinates": {
+                "latitude": 40.755953,
+                "longitude": -73.924415
+            },
+            "review_count": 789,
+            "rating": 3.8,
+            "zip_code": "11106"
+        },
+        {
+            "id": "-vBfKWJ1v9YdJQT5XUbcBQ",
+            "name": "Le Botaniste",
+            "address": "833 Lexington Ave, New York, NY 10065",
+            "coordinates": {
+                "latitude": 40.7649986274526,
+                "longitude": -73.9659830279587
+            },
+            "review_count": 500,
+            "rating": 4.5,
+            "zip_code": "10065"
+        },
+        {
+            "id": "dYWjNK07igws9jFNgQmhng",
+            "name": "Rosa Mexicano",
+            "address": "9 E 18th St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.738285,
+                "longitude": -73.990807
+            },
+            "review_count": 1784,
+            "rating": 3.5,
+            "zip_code": "10003"
+        },
+        {
+            "id": "tvqtAjAyc7dplVVwhw3VZQ",
+            "name": "La Contenta Oeste",
+            "address": "78 W 11th St, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.7352,
+                "longitude": -73.99808
+            },
+            "review_count": 346,
+            "rating": 4.2,
+            "zip_code": "10011"
+        },
+        {
+            "id": "LQHegfNHe7ylY3bocrFlpg",
+            "name": "Calle Dao - Bryant Park",
+            "address": "38 W 39th St, New York, NY 10018",
+            "coordinates": {
+                "latitude": 40.752167,
+                "longitude": -73.98422161374535
+            },
+            "review_count": 2041,
+            "rating": 4.2,
+            "zip_code": "10018"
+        },
+        {
+            "id": "7bD22UAtH56ikWYslOSIQg",
+            "name": "Calexico - Upper East Side",
+            "address": "1491 2nd Ave, New York, NY 10075",
+            "coordinates": {
+                "latitude": 40.77259,
+                "longitude": -73.95588
+            },
+            "review_count": 904,
+            "rating": 3.8,
+            "zip_code": "10075"
+        },
+        {
+            "id": "xemN4tP9RlK5c-yUT-M71Q",
+            "name": "Mamasita Bar & Grill",
+            "address": "818 10th Ave, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.767339,
+                "longitude": -73.989487
+            },
+            "review_count": 1728,
+            "rating": 4.2,
+            "zip_code": "10019"
+        },
+        {
+            "id": "ddFY9PpygYagv7-jVduB2Q",
+            "name": "Counter & Bodega",
+            "address": "216 7th Ave, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.74382426335628,
+                "longitude": -73.99627610328074
+            },
+            "review_count": 322,
+            "rating": 4.2,
+            "zip_code": "10011"
+        },
+        {
+            "id": "ED91L2kUw_pwF_Pd1ZdViQ",
+            "name": "Rancho Tequileria",
+            "address": "718 Amsterdam Ave, New York, NY 10025",
+            "coordinates": {
+                "latitude": 40.793432,
+                "longitude": -73.971356
+            },
+            "review_count": 121,
+            "rating": 4.0,
+            "zip_code": "10025"
+        },
+        {
+            "id": "xGoSAOhQBNdJMJmPn7CMDQ",
+            "name": "Mexicue - Midtown",
+            "address": "1440 Broadway, New York, NY 10018",
+            "coordinates": {
+                "latitude": 40.754109,
+                "longitude": -73.986015
+            },
+            "review_count": 707,
+            "rating": 3.9,
+            "zip_code": "10018"
+        },
+        {
+            "id": "4qCe2wTRGqbjP0wkI2Yy3g",
+            "name": "Chama Mama - Upper West Side",
+            "address": "373 Amsterdam Ave, New York, NY 10024",
+            "coordinates": {
+                "latitude": 40.78226,
+                "longitude": -73.97875
+            },
+            "review_count": 167,
+            "rating": 4.2,
+            "zip_code": "10024"
+        },
+        {
+            "id": "6ezrABEThm48qv1qj8_FVw",
+            "name": "Javelina",
+            "address": "1395 2nd Ave, New York, NY 10021",
+            "coordinates": {
+                "latitude": 40.7694,
+                "longitude": -73.95816
+            },
+            "review_count": 183,
+            "rating": 3.8,
+            "zip_code": "10021"
+        },
+        {
+            "id": "v8tuFxvNkKdZytWTn9BhMA",
+            "name": "Fonda Chelsea",
+            "address": "189 9th Ave, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.7455185879981,
+                "longitude": -74.0021848849335
+            },
+            "review_count": 469,
+            "rating": 3.8,
+            "zip_code": "10011"
+        },
+        {
+            "id": "WZynqsGjqQLc_T8R80_-7g",
+            "name": "Yellow Rose",
+            "address": "102 3rd Ave, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.732575,
+                "longitude": -73.98806909999999
+            },
+            "review_count": 195,
+            "rating": 4.2,
+            "zip_code": "10003"
+        },
+        {
+            "id": "eM5uNo9gsztpqAFBqwWWxA",
+            "name": "Sentir",
+            "address": "37 West 19th St, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.740061713275594,
+                "longitude": -73.99317959999999
+            },
+            "review_count": 51,
+            "rating": 4.7,
+            "zip_code": "10011"
+        }
+    ]
+}

@@ -1,0 +1,580 @@
+{
+    "businesses": [
+        {
+            "id": "gZz9A8k8ORC_xl0aHxtY4w",
+            "name": "Monkey Bar",
+            "address": "60 E 54th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.75998,
+                "longitude": -73.97313
+            },
+            "review_count": 193,
+            "rating": 4.2,
+            "zip_code": "10022"
+        },
+        {
+            "id": "z5hRX3iJ5Ty_S38iG_WY3Q",
+            "name": "Tanner Smiths",
+            "address": "204 W 55th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76442,
+                "longitude": -73.98169
+            },
+            "review_count": 2206,
+            "rating": 4.3,
+            "zip_code": "10019"
+        },
+        {
+            "id": "lu0XMmcPyFGvIgqRcbU_4g",
+            "name": "Le Jardinier",
+            "address": "610 Lexington Ave, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.7582033,
+                "longitude": -73.9713074
+            },
+            "review_count": 103,
+            "rating": 4.0,
+            "zip_code": "10022"
+        },
+        {
+            "id": "zRXMvxUX_rOliKZPpkWi_g",
+            "name": "Valerie",
+            "address": "45 W 45th St between 5th & 6th Ave, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.756326,
+                "longitude": -73.981117
+            },
+            "review_count": 1039,
+            "rating": 4.2,
+            "zip_code": "10036"
+        },
+        {
+            "id": "xMUZfoyzyJoTfZxrEZus4Q",
+            "name": "Mom's Kitchen & Bar",
+            "address": "701 9th Ave, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76247,
+                "longitude": -73.9901
+            },
+            "review_count": 2042,
+            "rating": 4.4,
+            "zip_code": "10019"
+        },
+        {
+            "id": "fyC2cBsQ0FsMJmv0jSworg",
+            "name": "Donna Margherita",
+            "address": "1304 2nd Ave, Ste A",
+            "coordinates": {
+                "latitude": 40.76652,
+                "longitude": -73.9598
+            },
+            "review_count": 220,
+            "rating": 4.5,
+            "zip_code": "10065"
+        },
+        {
+            "id": "Q-zg3X3OQ0gNABmwlgiczw",
+            "name": "The Naked Pig",
+            "address": "922 3rd Ave, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.759429,
+                "longitude": -73.968546
+            },
+            "review_count": 56,
+            "rating": 4.2,
+            "zip_code": "10022"
+        },
+        {
+            "id": "MaoCNdHni6MLjM9iYQqHcg",
+            "name": "Frida Midtown",
+            "address": "214 E 52nd St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.75667,
+                "longitude": -73.969168
+            },
+            "review_count": 215,
+            "rating": 4.5,
+            "zip_code": "10022"
+        },
+        {
+            "id": "XsElXaLxUPKquI78poB8yw",
+            "name": "Maison Pickle",
+            "address": "2315 Broadway, New York, NY 10024",
+            "coordinates": {
+                "latitude": 40.7870473,
+                "longitude": -73.9781361
+            },
+            "review_count": 1994,
+            "rating": 4.3,
+            "zip_code": "10024"
+        },
+        {
+            "id": "IOHaEgK1zDvUvB3SfKuGCw",
+            "name": "Parker & Quinn",
+            "address": "64 W 39th St, New York, NY 10018",
+            "coordinates": {
+                "latitude": 40.7532487,
+                "longitude": -73.9854967705314
+            },
+            "review_count": 1759,
+            "rating": 4.1,
+            "zip_code": "10018"
+        },
+        {
+            "id": "qCf1QN11Qdncpqb7PhuyVw",
+            "name": "The Ragtrader & Bo Peep Cocktail and Highball Store",
+            "address": "70 W 36th St 1A, 1A",
+            "coordinates": {
+                "latitude": 40.7507108837366,
+                "longitude": -73.98621872023773
+            },
+            "review_count": 936,
+            "rating": 4.4,
+            "zip_code": "10018"
+        },
+        {
+            "id": "DGhWO1sUWydVeR5j5ZZaMw",
+            "name": "La Grande Boucherie",
+            "address": "145 W 53rd St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.7626274,
+                "longitude": -73.98084109999999
+            },
+            "review_count": 3426,
+            "rating": 4.4,
+            "zip_code": "10019"
+        },
+        {
+            "id": "_Jgmhw0ywyoGyglPwB1xGA",
+            "name": "Friend Of A Farmer - Upper West Side",
+            "address": "68 West 71st St, New York, NY 10023",
+            "coordinates": {
+                "latitude": 40.77642887433869,
+                "longitude": -73.9790569
+            },
+            "review_count": 72,
+            "rating": 4.2,
+            "zip_code": "10023"
+        },
+        {
+            "id": "cCesIqo-LQt0cRlZAnrAZQ",
+            "name": "Friedman's",
+            "address": "132 W 31st St, New York, NY 10001",
+            "coordinates": {
+                "latitude": 40.748298,
+                "longitude": -73.990737
+            },
+            "review_count": 3132,
+            "rating": 4.0,
+            "zip_code": "10001"
+        },
+        {
+            "id": "11Nbr2oTRB5Uqi36L8if8g",
+            "name": "The Consulate - Midtown",
+            "address": "44 W 56th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76309,
+                "longitude": -73.97661
+            },
+            "review_count": 138,
+            "rating": 4.3,
+            "zip_code": "10019"
+        },
+        {
+            "id": "mNeyjjcfrXdGf_mCyoolkw",
+            "name": "Lola's",
+            "address": "2 W 28th St, New York, NY 10001",
+            "coordinates": {
+                "latitude": 40.74481688811193,
+                "longitude": -73.9878205
+            },
+            "review_count": 33,
+            "rating": 4.6,
+            "zip_code": "10001"
+        },
+        {
+            "id": "veku2cg2qaV-7MxwhOMBmg",
+            "name": "Judge Roy Bean Public House",
+            "address": "38 W 56th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.7629158108786,
+                "longitude": -73.9761248066812
+            },
+            "review_count": 940,
+            "rating": 4.3,
+            "zip_code": "10019"
+        },
+        {
+            "id": "hdiuRS9sVZSMReZm4oV5SA",
+            "name": "Da Andrea - Greenwich Village",
+            "address": "35 W 13th St, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.736287,
+                "longitude": -73.995865
+            },
+            "review_count": 2415,
+            "rating": 4.4,
+            "zip_code": "10011"
+        },
+        {
+            "id": "Ig4LSE3TRPs5nSsfTgnniQ",
+            "name": "Carla",
+            "address": "331 W 51st St, Ground Fl",
+            "coordinates": {
+                "latitude": 40.76357,
+                "longitude": -73.98691
+            },
+            "review_count": 218,
+            "rating": 4.6,
+            "zip_code": "10019"
+        },
+        {
+            "id": "veq1Bl1DW3UWMekZJUsG1Q",
+            "name": "Gramercy Tavern",
+            "address": "42 E 20th St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.73844,
+                "longitude": -73.98825
+            },
+            "review_count": 3571,
+            "rating": 4.4,
+            "zip_code": "10003"
+        },
+        {
+            "id": "PYmjoid5P-Mw8dkkKxZy6w",
+            "name": "Harvest Kitchen",
+            "address": "269 Columbus Ave, New York, NY 10023",
+            "coordinates": {
+                "latitude": 40.777697,
+                "longitude": -73.978357
+            },
+            "review_count": 437,
+            "rating": 4.1,
+            "zip_code": "10023"
+        },
+        {
+            "id": "QPEzLkO35OTYijFhs8d7-w",
+            "name": "The Reading Room",
+            "address": "16 E 46th St, New York, NY 10017",
+            "coordinates": {
+                "latitude": 40.7555,
+                "longitude": -73.97802
+            },
+            "review_count": 141,
+            "rating": 4.5,
+            "zip_code": "10017"
+        },
+        {
+            "id": "6hKJePanmG9AxK4dfwgyyg",
+            "name": "The Horny Ram",
+            "address": "951 2nd Ave, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.75528,
+                "longitude": -73.96857
+            },
+            "review_count": 784,
+            "rating": 4.2,
+            "zip_code": "10022"
+        },
+        {
+            "id": "tnxb_qM5e7J5wIfYwJB3Ig",
+            "name": "The Elgin",
+            "address": "64 West 48th St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.758339026848695,
+                "longitude": -73.98082697379752
+            },
+            "review_count": 335,
+            "rating": 4.3,
+            "zip_code": "10036"
+        },
+        {
+            "id": "Xk3BVvlX-KXh6kJhbClMKw",
+            "name": "The Flatiron Room Murray Hill",
+            "address": "9 E 37th St, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.750165,
+                "longitude": -73.98221
+            },
+            "review_count": 560,
+            "rating": 4.3,
+            "zip_code": "10016"
+        },
+        {
+            "id": "LHxZgTddXIp_S1sL3nNG9w",
+            "name": "Park Avenue Tavern",
+            "address": "99 Park Ave, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.750313,
+                "longitude": -73.978426
+            },
+            "review_count": 1053,
+            "rating": 4.0,
+            "zip_code": "10016"
+        },
+        {
+            "id": "e_EQojNWskn_hFbKA_UZ-Q",
+            "name": "Balvanera",
+            "address": "152 Stanton St, New York, NY 10002",
+            "coordinates": {
+                "latitude": 40.72063,
+                "longitude": -73.98539
+            },
+            "review_count": 337,
+            "rating": 4.5,
+            "zip_code": "10002"
+        },
+        {
+            "id": "54SrQVVhGcvfuIkFabQ8KQ",
+            "name": "P.J. Clarke's",
+            "address": "915 Third Ave, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.7589148,
+                "longitude": -73.9680336
+            },
+            "review_count": 1087,
+            "rating": 3.8,
+            "zip_code": "10022"
+        },
+        {
+            "id": "mqJU7hNRbTrffSyj-95MXw",
+            "name": "Bobby Van's Steakhouse",
+            "address": "131 E 54th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.75936128889879,
+                "longitude": -73.97092407918657
+            },
+            "review_count": 272,
+            "rating": 3.7,
+            "zip_code": "10022"
+        },
+        {
+            "id": "YvWQMlMjtYmVmheH97tTlQ",
+            "name": "Crab House",
+            "address": "135 E 55th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.759664,
+                "longitude": -73.969776
+            },
+            "review_count": 1116,
+            "rating": 4.4,
+            "zip_code": "10022"
+        },
+        {
+            "id": "SaYTVG7wHCMDBofHCgXPaA",
+            "name": "Dutch Freds",
+            "address": "307 W 47th St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.760835,
+                "longitude": -73.987823
+            },
+            "review_count": 2167,
+            "rating": 4.5,
+            "zip_code": "10036"
+        },
+        {
+            "id": "uBGjcW-GuYy_qSvMykuISA",
+            "name": "Pommes Frites",
+            "address": "128 Macdougal St, New York, NY 10012",
+            "coordinates": {
+                "latitude": 40.7300774,
+                "longitude": -74.00021711901437
+            },
+            "review_count": 1167,
+            "rating": 4.4,
+            "zip_code": "10012"
+        },
+        {
+            "id": "u2Uw0v1Rqepv0X6nOyICxA",
+            "name": "Anassa Taverna NYC",
+            "address": "200 E 60th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.762037,
+                "longitude": -73.9660633
+            },
+            "review_count": 447,
+            "rating": 3.5,
+            "zip_code": "10022"
+        },
+        {
+            "id": "Xd_l7jtUAZZAAvK8-mI2Jw",
+            "name": "The Smith",
+            "address": "1150 Broadway, New York, NY 10010",
+            "coordinates": {
+                "latitude": 40.74424,
+                "longitude": -73.98878
+            },
+            "review_count": 1486,
+            "rating": 4.1,
+            "zip_code": "10010"
+        },
+        {
+            "id": "0moBSyrTezcT3uePV74nug",
+            "name": "Westville",
+            "address": "809 9th Ave, NY, NY 10019",
+            "coordinates": {
+                "latitude": 40.765763,
+                "longitude": -73.98751
+            },
+            "review_count": 305,
+            "rating": 4.3,
+            "zip_code": "10019"
+        },
+        {
+            "id": "Lw044EfH1h3XhUhri3ExfA",
+            "name": "BLACKBARN",
+            "address": "19 E 26th St, New York, NY 10010",
+            "coordinates": {
+                "latitude": 40.7431,
+                "longitude": -73.9871
+            },
+            "review_count": 740,
+            "rating": 3.8,
+            "zip_code": "10010"
+        },
+        {
+            "id": "RLG03FaAdKd__SPbdsTsrg",
+            "name": "Green Kitchen",
+            "address": "1325 2nd Ave, New York, NY 10021",
+            "coordinates": {
+                "latitude": 40.767478,
+                "longitude": -73.959622
+            },
+            "review_count": 40,
+            "rating": 3.8,
+            "zip_code": "10021"
+        },
+        {
+            "id": "8SehQovJOuQDLbtzLLYLyw",
+            "name": "RH Rooftop Restaurant New York",
+            "address": "9 9th Ave, New York, NY 10014",
+            "coordinates": {
+                "latitude": 40.73985,
+                "longitude": -74.00639
+            },
+            "review_count": 976,
+            "rating": 4.1,
+            "zip_code": "10014"
+        },
+        {
+            "id": "J3NT61-AH5d5Gu5tFJhYSw",
+            "name": "The Cabin NYC",
+            "address": "205 E 4th St, New York, NY 10009",
+            "coordinates": {
+                "latitude": 40.723991,
+                "longitude": -73.983785
+            },
+            "review_count": 696,
+            "rating": 4.1,
+            "zip_code": "10009"
+        },
+        {
+            "id": "oi2BUe6_p-sfy-l5LmXnEg",
+            "name": "Le Relais de Venise L'Entrecote",
+            "address": "155 E 54th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.75871,
+                "longitude": -73.96949
+            },
+            "review_count": 143,
+            "rating": 3.6,
+            "zip_code": "10022"
+        },
+        {
+            "id": "zX8IF7oCbw1HrNaPmOBy-g",
+            "name": "FERNS",
+            "address": "166 1st Ave, New York, NY 10009",
+            "coordinates": {
+                "latitude": 40.72881612591204,
+                "longitude": -73.9840489193202
+            },
+            "review_count": 304,
+            "rating": 4.5,
+            "zip_code": "10009"
+        },
+        {
+            "id": "xt4sa64WOrpJvZBDPNPNYg",
+            "name": "Jacob's Pickles",
+            "address": "509 Amsterdam Ave, New York, NY 10024",
+            "coordinates": {
+                "latitude": 40.7866504411994,
+                "longitude": -73.9755284786224
+            },
+            "review_count": 5733,
+            "rating": 4.2,
+            "zip_code": "10024"
+        },
+        {
+            "id": "LkV96_buOU_n0br4SBO57w",
+            "name": "Ci Siamo",
+            "address": "440 West 33rd St, Ste 100",
+            "coordinates": {
+                "latitude": 40.75240549384363,
+                "longitude": -73.9982864846782
+            },
+            "review_count": 586,
+            "rating": 4.4,
+            "zip_code": "10001"
+        },
+        {
+            "id": "RQojRzAYA9Cq87PqwQq5yg",
+            "name": "Deux Amis",
+            "address": "356 E 51st St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.7544765,
+                "longitude": -73.9660238
+            },
+            "review_count": 239,
+            "rating": 4.1,
+            "zip_code": "10022"
+        },
+        {
+            "id": "8nXo6lNJlXQQIdy8Kf7J9Q",
+            "name": "Tessa",
+            "address": "349 Amsterdam Ave, New York, NY 10024",
+            "coordinates": {
+                "latitude": 40.7814059,
+                "longitude": -73.97918
+            },
+            "review_count": 525,
+            "rating": 4.0,
+            "zip_code": "10024"
+        },
+        {
+            "id": "ssGhu4n3emZ9kEPVf371IQ",
+            "name": "Cookshop",
+            "address": "156 10th Ave, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.74573188144824,
+                "longitude": -74.00540454907613
+            },
+            "review_count": 2386,
+            "rating": 4.0,
+            "zip_code": "10011"
+        },
+        {
+            "id": "DW5SL9RM-kJnmRyYo4oEqg",
+            "name": "Little Ruby's Murray Hill",
+            "address": "442 3rd Ave, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.74364,
+                "longitude": -73.97985
+            },
+            "review_count": 790,
+            "rating": 4.0,
+            "zip_code": "10016"
+        },
+        {
+            "id": "TAANt0fPbfHqVP5LyMBioA",
+            "name": "Kashkaval Garden",
+            "address": "852 9th Ave, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76680229936593,
+                "longitude": -73.986219866559
+            },
+            "review_count": 722,
+            "rating": 4.2,
+            "zip_code": "10019"
+        }
+    ]
+}

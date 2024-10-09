@@ -1,0 +1,568 @@
+{
+    "businesses": [
+        {
+            "id": "x0k5kFArHLijdY8-NEQ7Xg",
+            "name": "Bengal Tiger ",
+            "address": "234W 56th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.765673188349595,
+                "longitude": -73.98265750332172
+            },
+            "review_count": 2441,
+            "rating": 4.5,
+            "zip_code": "10019"
+        },
+        {
+            "id": "QqrEF8_ZQCGi63cL10J5oA",
+            "name": "Chola",
+            "address": "232 E 58th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.76016,
+                "longitude": -73.96582
+            },
+            "review_count": 706,
+            "rating": 4.0,
+            "zip_code": "10022"
+        },
+        {
+            "id": "1_pK5aQ47atF50oAKHADhA",
+            "name": "Indian Accent",
+            "address": "123 W 56th St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.7643344624229,
+                "longitude": -73.9787312885132
+            },
+            "review_count": 780,
+            "rating": 4.3,
+            "zip_code": "10019"
+        },
+        {
+            "id": "m5Whyz8O8jM4DrE808h71g",
+            "name": "Darbar Grill",
+            "address": "157 E 55th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.759357,
+                "longitude": -73.968826
+            },
+            "review_count": 632,
+            "rating": 4.0,
+            "zip_code": "10022"
+        },
+        {
+            "id": "XLEdQl5s1bO5Iu43W_c96Q",
+            "name": "Muna",
+            "address": "152 East 46th St, New York, NY 10017",
+            "coordinates": {
+                "latitude": 40.753509,
+                "longitude": -73.973515
+            },
+            "review_count": 105,
+            "rating": 4.7,
+            "zip_code": "10017"
+        },
+        {
+            "id": "IysZ64t48AedrhWfz3WJGQ",
+            "name": "Cloves Indian Cuisine",
+            "address": "66 Madison Ave, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.74367,
+                "longitude": -73.98612
+            },
+            "review_count": 90,
+            "rating": 4.9,
+            "zip_code": "10016"
+        },
+        {
+            "id": "juAQ4DHCW_24LpV1T1JmBA",
+            "name": "Patiala Indian Grill  & Bar",
+            "address": "240 W 35th St, New York, NY 10001",
+            "coordinates": {
+                "latitude": 40.752147,
+                "longitude": -73.991864
+            },
+            "review_count": 50,
+            "rating": 4.4,
+            "zip_code": "10001"
+        },
+        {
+            "id": "A-ert0jDRBfku9ogyW_mEg",
+            "name": "Spice Symphony - Midtown East",
+            "address": "150 E 50th St, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.7558937072754,
+                "longitude": -73.9715347290039
+            },
+            "review_count": 707,
+            "rating": 4.4,
+            "zip_code": "10022"
+        },
+        {
+            "id": "-mxZcmP2TtgIMmfNmxWMQA",
+            "name": "Javitri",
+            "address": "132 E 61st St, New York, NY 10065",
+            "coordinates": {
+                "latitude": 40.76358346058178,
+                "longitude": -73.96760314428282
+            },
+            "review_count": 19,
+            "rating": 4.6,
+            "zip_code": "10065"
+        },
+        {
+            "id": "cJ1Uf4MlR4egrG-lbfh8oA",
+            "name": "Spice Symphony Times Square",
+            "address": "317 W 46th St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.760281,
+                "longitude": -73.988754
+            },
+            "review_count": 42,
+            "rating": 4.8,
+            "zip_code": "10036"
+        },
+        {
+            "id": "u_CnSp9FieAuWqhvCn-A2A",
+            "name": "Spice Mantra",
+            "address": "1047 2nd Ave, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.75825,
+                "longitude": -73.96633
+            },
+            "review_count": 99,
+            "rating": 4.7,
+            "zip_code": "10022"
+        },
+        {
+            "id": "ut-560tVcs2g-ZU0Y_qqHQ",
+            "name": "Saar Indian Bistro",
+            "address": "241 W 51st St, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.762754,
+                "longitude": -73.984803
+            },
+            "review_count": 461,
+            "rating": 4.4,
+            "zip_code": "10019"
+        },
+        {
+            "id": "z2VXX7wGl8XZ6_oo9W3koA",
+            "name": "Patiala Indian Grill",
+            "address": "371 W 34th St, New York, NY 10001",
+            "coordinates": {
+                "latitude": 40.7534700430117,
+                "longitude": -73.99595067259492
+            },
+            "review_count": 696,
+            "rating": 4.3,
+            "zip_code": "10001"
+        },
+        {
+            "id": "izRJeBfDQYJmd6ibIQ6Mfg",
+            "name": "Mughlai Indian Cuisine",
+            "address": "1724 2nd Ave, New York, NY 10128",
+            "coordinates": {
+                "latitude": 40.78002,
+                "longitude": -73.94978
+            },
+            "review_count": 654,
+            "rating": 4.3,
+            "zip_code": "10128"
+        },
+        {
+            "id": "wBwTAHhfSm5hpJU-InCUdw",
+            "name": "Red Onion",
+            "address": "277 East 10th St, New York, NY 10009",
+            "coordinates": {
+                "latitude": 40.728276,
+                "longitude": -73.982727
+            },
+            "review_count": 59,
+            "rating": 4.8,
+            "zip_code": "10009"
+        },
+        {
+            "id": "t6PzD4uzBOfyCLcd_lT8cQ",
+            "name": "Sathi",
+            "address": "216 3rd Ave, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.73621,
+                "longitude": -73.98528
+            },
+            "review_count": 342,
+            "rating": 4.7,
+            "zip_code": "10003"
+        },
+        {
+            "id": "5dyFdzcYr_GNem5BFApeeg",
+            "name": "Bungalow",
+            "address": "24 1st Ave, New York, NY 10009",
+            "coordinates": {
+                "latitude": 40.7236791883236,
+                "longitude": -73.98797429999999
+            },
+            "review_count": 94,
+            "rating": 4.0,
+            "zip_code": "10009"
+        },
+        {
+            "id": "9pMhRYYgV7E9L7pzECtJKA",
+            "name": "The Drunken Munkey - UES",
+            "address": "338 E 92nd St, New York, NY 10128",
+            "coordinates": {
+                "latitude": 40.78098,
+                "longitude": -73.94751
+            },
+            "review_count": 1426,
+            "rating": 4.3,
+            "zip_code": "10128"
+        },
+        {
+            "id": "NgD-6ogFGc_c4z5_Ur4k2g",
+            "name": "Dhaba Indian Cuisine",
+            "address": "108 Lexington Ave, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.742364,
+                "longitude": -73.982813
+            },
+            "review_count": 1627,
+            "rating": 3.7,
+            "zip_code": "10016"
+        },
+        {
+            "id": "jf3JRaxUYU93x8LFU-8gkA",
+            "name": "GupShup",
+            "address": "115 E 18th St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.7368831,
+                "longitude": -73.98764
+            },
+            "review_count": 816,
+            "rating": 4.0,
+            "zip_code": "10003"
+        },
+        {
+            "id": "kS2CP48K66yL2TwIhUqy_A",
+            "name": "Tamarind",
+            "address": "99 Hudson St, New York, NY 10013",
+            "coordinates": {
+                "latitude": 40.71909,
+                "longitude": -74.00892
+            },
+            "review_count": 1199,
+            "rating": 3.9,
+            "zip_code": "10013"
+        },
+        {
+            "id": "7USPKYeaAfxl0Ch9j_1l7A",
+            "name": "Moti Mahal Delux",
+            "address": "1149 1st Ave, New York, NY 10065",
+            "coordinates": {
+                "latitude": 40.76213,
+                "longitude": -73.9605
+            },
+            "review_count": 591,
+            "rating": 3.8,
+            "zip_code": "10065"
+        },
+        {
+            "id": "7DzfrwNwXmbS6OhYxPKfHQ",
+            "name": "Kanyakumari",
+            "address": "20 E 17th St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.737313,
+                "longitude": -73.991263
+            },
+            "review_count": 83,
+            "rating": 4.4,
+            "zip_code": "10003"
+        },
+        {
+            "id": "UiG3MlLDMMZp31XDBM2kvA",
+            "name": "Karahi Indian Cuisine",
+            "address": "803 9th Ave, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.765667,
+                "longitude": -73.987595
+            },
+            "review_count": 128,
+            "rating": 4.6,
+            "zip_code": "10019"
+        },
+        {
+            "id": "HEs6llkn3wIP1ATXeIZQew",
+            "name": "Pippali",
+            "address": "129 E 27th St, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.74241,
+                "longitude": -73.98325
+            },
+            "review_count": 927,
+            "rating": 4.1,
+            "zip_code": "10016"
+        },
+        {
+            "id": "_7BGw3YFNOTzP1Www3zB7g",
+            "name": "Mughlai Grill",
+            "address": "6 Clinton St, New York, NY 10002",
+            "coordinates": {
+                "latitude": 40.7210905,
+                "longitude": -73.9840446
+            },
+            "review_count": 596,
+            "rating": 4.6,
+            "zip_code": "10002"
+        },
+        {
+            "id": "Xqk91WuhMeYS4pedccUYgA",
+            "name": "Gazab",
+            "address": "179 Essex St, New York, NY 10002",
+            "coordinates": {
+                "latitude": 40.72191,
+                "longitude": -73.98666
+            },
+            "review_count": 307,
+            "rating": 4.4,
+            "zip_code": "10002"
+        },
+        {
+            "id": "7VIUu8ay754GoUYEpsmxOA",
+            "name": "Jazba",
+            "address": "207 2nd Ave, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.731701,
+                "longitude": -73.98585
+            },
+            "review_count": 165,
+            "rating": 4.3,
+            "zip_code": "10003"
+        },
+        {
+            "id": "jYhbUh1TV7SCfPxjIhVpcg",
+            "name": "Baar Baar",
+            "address": "13 E 1st St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.7244378855031,
+                "longitude": -73.9915524
+            },
+            "review_count": 1312,
+            "rating": 3.9,
+            "zip_code": "10003"
+        },
+        {
+            "id": "Txm8KtUh9Mn2E7980jTr5g",
+            "name": "Dhamaka",
+            "address": "119 Delancey St, Essex Market, Store  34",
+            "coordinates": {
+                "latitude": 40.7180658,
+                "longitude": -73.9881304
+            },
+            "review_count": 678,
+            "rating": 4.1,
+            "zip_code": "10002"
+        },
+        {
+            "id": "xWVHj2XNcxEg79Nkb5Zb6Q",
+            "name": "Semma",
+            "address": "60 Greenwich Ave, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.736054206102615,
+                "longitude": -74.0005639
+            },
+            "review_count": 487,
+            "rating": 4.1,
+            "zip_code": "10011"
+        },
+        {
+            "id": "KXD44wWmrGf7mzyyr0bikw",
+            "name": "P.S. Kitchen",
+            "address": "246 W 48th St, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.760706,
+                "longitude": -73.986627
+            },
+            "review_count": 787,
+            "rating": 4.3,
+            "zip_code": "10036"
+        },
+        {
+            "id": "objNX6cuj1JyUijFjw21Qw",
+            "name": "Bombay Bistro",
+            "address": "31 Cornelia St, New York, NY 10014",
+            "coordinates": {
+                "latitude": 40.73136,
+                "longitude": -74.00253
+            },
+            "review_count": 303,
+            "rating": 4.4,
+            "zip_code": "10014"
+        },
+        {
+            "id": "ePn4BwyXeY8NKN-MWSgfrQ",
+            "name": "Kebab Aur Sharab",
+            "address": "247 W 72nd St, New York, NY 10023",
+            "coordinates": {
+                "latitude": 40.779519,
+                "longitude": -73.983327
+            },
+            "review_count": 168,
+            "rating": 4.0,
+            "zip_code": "10023"
+        },
+        {
+            "id": "qhXIW0LDT4XsoN2IE6dZHg",
+            "name": "Ahimsa",
+            "address": "204 E 38th St, New York, NY 10016",
+            "coordinates": {
+                "latitude": 40.7478959,
+                "longitude": -73.9758638
+            },
+            "review_count": 247,
+            "rating": 4.4,
+            "zip_code": "10016"
+        },
+        {
+            "id": "nd0uXNXaeaDMuMk4C1GusA",
+            "name": "Bukhara Grill: Indian Spice Rave",
+            "address": "217 E 49th St, New York, NY 10017",
+            "coordinates": {
+                "latitude": 40.75501,
+                "longitude": -73.97028
+            },
+            "review_count": 556,
+            "rating": 3.6,
+            "zip_code": "10017"
+        },
+        {
+            "id": "eTzH9lmkmouNlmuJ77i8Ow",
+            "name": "Angaar",
+            "address": "283 Columbus Ave, New York, NY 10023",
+            "coordinates": {
+                "latitude": 40.7782,
+                "longitude": -73.97802
+            },
+            "review_count": 219,
+            "rating": 4.2,
+            "zip_code": "10023"
+        },
+        {
+            "id": "guwS_mhhUjOT5d8sYfEluQ",
+            "name": "Adyar Ananda Bhavan",
+            "address": "1071 1st Ave, New York, NY 10022",
+            "coordinates": {
+                "latitude": 40.759381,
+                "longitude": -73.962489
+            },
+            "review_count": 420,
+            "rating": 3.7,
+            "zip_code": "10022"
+        },
+        {
+            "id": "tN37MOvqzrmpU0h0PfoDmw",
+            "name": "Utsav",
+            "address": "1185 Avenue Of The Americas Plz, New York, NY 10036",
+            "coordinates": {
+                "latitude": 40.75791,
+                "longitude": -73.9825
+            },
+            "review_count": 699,
+            "rating": 3.5,
+            "zip_code": "10036"
+        },
+        {
+            "id": "FXDMFBM-rV2s5MHzA33d2g",
+            "name": "Bombay Grill House",
+            "address": "764 9th Ave, New York, NY 10019",
+            "coordinates": {
+                "latitude": 40.76421,
+                "longitude": -73.988101
+            },
+            "review_count": 342,
+            "rating": 4.1,
+            "zip_code": "10019"
+        },
+        {
+            "id": "iXSuNKKUBIrBX7zUerlQDQ",
+            "name": "Benares",
+            "address": "45 Murray St, New York, NY 10007",
+            "coordinates": {
+                "latitude": 40.71415,
+                "longitude": -74.009209
+            },
+            "review_count": 690,
+            "rating": 4.0,
+            "zip_code": "10007"
+        },
+        {
+            "id": "GNPne4Il-itbn2sLbvMo1g",
+            "name": "Angel Indian Restaurant",
+            "address": "7414 37th Rd, Jackson Heights, NY 11372",
+            "coordinates": {
+                "latitude": 40.7473069226623,
+                "longitude": -73.8912814123575
+            },
+            "review_count": 540,
+            "rating": 4.5,
+            "zip_code": "11372"
+        },
+        {
+            "id": "lxNU-aBq0yPwBDx-i89ahA",
+            "name": "Seva Indian Cuisine",
+            "address": "34-11 30th Ave, Astoria, NY 11103",
+            "coordinates": {
+                "latitude": 40.76571,
+                "longitude": -73.91839
+            },
+            "review_count": 1492,
+            "rating": 4.4,
+            "zip_code": "11103"
+        },
+        {
+            "id": "3hlAeWgSKAnSQ1tg8k8D8g",
+            "name": "Alachi Masala",
+            "address": "488 Amsterdam Ave, New York, NY 10024",
+            "coordinates": {
+                "latitude": 40.78616,
+                "longitude": -73.97635
+            },
+            "review_count": 300,
+            "rating": 3.9,
+            "zip_code": "10024"
+        },
+        {
+            "id": "LTfXpILp9GtabkM9ooLeGg",
+            "name": "Oh Calcutta",
+            "address": "10-57 Jackson Ave, New York, NY 11101",
+            "coordinates": {
+                "latitude": 40.74277,
+                "longitude": -73.95271
+            },
+            "review_count": 8,
+            "rating": 4.5,
+            "zip_code": "11101"
+        },
+        {
+            "id": "7DUPGtHqVZHJ3yIufbWLsg",
+            "name": "Malai Marke Indian Cuisine",
+            "address": "318 E 6th St, New York, NY 10003",
+            "coordinates": {
+                "latitude": 40.726934,
+                "longitude": -73.98758
+            },
+            "review_count": 676,
+            "rating": 4.0,
+            "zip_code": "10003"
+        },
+        {
+            "id": "JSX6Pk56w4BhgO8eSvCrKg",
+            "name": "aRoqa",
+            "address": "206 9th Ave, New York, NY 10011",
+            "coordinates": {
+                "latitude": 40.746065,
+                "longitude": -74.001254
+            },
+            "review_count": 437,
+            "rating": 4.1,
+            "zip_code": "10011"
+        }
+    ]
+}
