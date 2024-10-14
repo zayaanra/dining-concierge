@@ -2,3 +2,10 @@
 
 venv
 .env
+
+node_modules
+package
+
+*.zip
+
+index.mjs
