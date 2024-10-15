@@ -36,15 +36,15 @@ def receive_from_queue():
         )
 
         messages = response['Messages']
-        messageAttributes = messages[0]['MessageAttributes']
+        body = json.loads(messages[0]['Body'])
         receiptHandle = messages[0]['ReceiptHandle']
 
         slots = {
-            "cuisine": messageAttributes["Cuisine"]["StringValue"],
-            "diningTime": messageAttributes["DiningTime"]["StringValue"],
-            "location": messageAttributes["Location"]["StringValue"],
-            "numOfPeople": messageAttributes["NumOfPeople"]["StringValue"],
-            "email": messageAttributes["Email"]["StringValue"]
+            "cuisine": body["Cuisine"],
+            "diningTime": body["DiningTime"],
+            "location": body["Location"],
+            "numOfPeople": body["NumOfPeople"],
+            "email": body["Email"]
         }
         return slots, receiptHandle
     except Exception as e:
