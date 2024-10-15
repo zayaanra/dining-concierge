@@ -26,131 +26,151 @@ dynamodb_client = boto3.client('dynamodb')
 ses_client = boto3.client('ses')
 
 def receive_from_queue():
-    response = sqs_client.receive_message(
-        QueueUrl=SQS_QUEUE_URL,
-        AttributeNames=["All"],
-        MessageAttributeNames=["All"],
-        MaxNumberOfMessages=1,
-        WaitTimeSeconds=10
-    )
+    try:
+        response = sqs_client.receive_message(
+            QueueUrl=SQS_QUEUE_URL,
+            AttributeNames=["All"],
+            MessageAttributeNames=["All"],
+            MaxNumberOfMessages=1,
+            WaitTimeSeconds=10
+        )
 
-    messages = response['Messages']
-    if not messages:
-        print("No messages received from SQS\n")
-        return
+        messages = response['Messages']
+        messageAttributes = messages[0]['MessageAttributes']
+        receiptHandle = messages[0]['ReceiptHandle']
+
+        slots = {
+            "cuisine": messageAttributes["Cuisine"]["StringValue"],
+            "diningTime": messageAttributes["DiningTime"]["StringValue"],
+            "location": messageAttributes["Location"]["StringValue"],
+            "numOfPeople": messageAttributes["NumOfPeople"]["StringValue"],
+            "email": messageAttributes["Email"]["StringValue"]
+        }
+        return slots, receiptHandle
+    except Exception as e:
+        print(f"Something went wrong: {e}")
+        return None
+
+
+def search_index(cuisine):
+    try:
+        query = {
+            "size": 3,
+            "query": {
+                "function_score": {
+                    "query": {
+                        "multi_match": {
+                            "query": cuisine,
+                            "fields": ["Cuisine"]
+                        }
+                    },
+                    "random_score": {}
+                }
+            }
+        }
+
+        headers = { "Content-Type": "application/json" }
+        r = requests.get(url, auth=awsauth, headers=headers, data=json.dumps(query))
+
+        data = json.loads(r.text)
+        restaurants = [
+            {
+                "RestaurantID": hit["_source"]["RestaurantID"],
+            }
+            for hit in data["hits"]["hits"]
+        ]
+
+        return restaurants
+    except Exception as e:
+        print(f"Something went wrong: {e}")
+        return None
+
+def search_dynamodb(restaurants):
+    try:
+        keys = []
+        for r in restaurants:
+            restaurantID = r['RestaurantID']
+            keys.append(
+                {"restaurant_id": {"S": restaurantID}}
+            )
         
-    messageAttributes = messages[0]['MessageAttributes']
-    receiptHandle = messages[0]['ReceiptHandle']
+        response = dynamodb_client.batch_get_item(
+            RequestItems={
+                "yelp-restaurants": {
+                    'Keys': keys,
+                    'AttributesToGet': ["name", "address"]
+                }
+            }
+        )
 
-    slots = {
-        "cuisine": messageAttributes["Cuisine"]["StringValue"],
-        "diningTime": messageAttributes["DiningTime"]["StringValue"],
-        "location": messageAttributes["Location"]["StringValue"],
-        "numOfPeople": messageAttributes["NumOfPeople"]["StringValue"],
-        "email": messageAttributes["Email"]["StringValue"]
+        yelp_restaurants = response["Responses"]["yelp-restaurants"]
+        return yelp_restaurants
+    except Exception as e:
+        print(f"Something went wrong: {e}")
+
+def send_email(cuisine, numOfPeople, diningTime, email, yelp_restaurants):
+    try:
+        msg = f"Hello! Here are my {cuisine} restaurant suggestions for {numOfPeople} people, for today at {diningTime}\n\n"
+        n = 1
+        for r in yelp_restaurants:
+            name, address = r['name']['S'], r['address']['S']
+            msg += f"{n}. {name}, located at {address}\n"
+            n += 1
+        
+        msg += "\n\n"
+        msg += "Enjoy your meal!"
+
+        print(email)
+        
+        response = ses_client.send_email(
+            Source=SES_SENDER_EMAIL,
+            Destination={
+                'ToAddresses': [email],
+            },
+            Message={
+                'Subject': {
+                    'Data': "Restaurant Suggestions",
+                },
+                'Body': {
+                    'Text': {
+                        'Data': msg,
+                    }
+                }
+            }
+        )
+
+        print("Sent email response: ", response)
+        return response
+    except Exception as e:
+        print(f"Something went wrong: {e}")
+        return None
+
+# Lambda execution starts here
+def lambda_handler(event, context):
+    invalidResponse = {
+        "statusCode": 500,
+        "body": json.dumps("Something went wrong")
     }
 
+    slots, receiptHandle = receive_from_queue()
+    if not slots:
+        return invalidResponse
+    
+    restaurants = search_index(slots["cuisine"])
+    if not restaurants:
+        return invalidResponse
+    
+    yelp_restaurants = search_dynamodb(restaurants)
+    if not yelp_restaurants:
+        return invalidResponse
+    
+    email_response = send_email(slots["cuisine"], slots["numOfPeople"], slots["diningTime"], slots['email'], yelp_restaurants)
+    if not email_response:
+        return invalidResponse
+    
     response = sqs_client.delete_message(
         QueueUrl=SQS_QUEUE_URL,
         ReceiptHandle=receiptHandle
     )
     print(f"SQS Message Deleted:{response}\n")
-
-    return slots
-
-def search_index(cuisine):
-    query = {
-        "size": 3,
-        "query": {
-            "function_score": {
-                "query": {
-                    "multi_match": {
-                        "query": cuisine,
-                        "fields": ["Cuisine"]
-                    }
-                },
-                "random_score": {}
-            }
-        }
-    }
-
-    headers = { "Content-Type": "application/json" }
-    r = requests.get(url, auth=awsauth, headers=headers, data=json.dumps(query))
-
-    data = json.loads(r.text)
-    restaurants = [
-        {
-            "RestaurantID": hit["_source"]["RestaurantID"],
-        }
-        for hit in data["hits"]["hits"]
-    ]
-
-    return restaurants
-
-def search_dynamodb(restaurants):
-    keys = []
-    for r in restaurants:
-        restaurantID = r['RestaurantID']
-        keys.append(
-            {"restaurant_id": {"S": restaurantID}}
-        )
-    
-    response = dynamodb_client.batch_get_item(
-        RequestItems={
-            "yelp-restaurants": {
-                'Keys': keys,
-                'AttributesToGet': ["name", "address"]
-            }
-        }
-    )
-
-    yelp_restaurants = response["Responses"]["yelp-restaurants"]
-    return yelp_restaurants
-
-def send_email(cuisine, numOfPeople, diningTime, email, yelp_restaurants):
-    # TODO - need production access for SES which requires a domain which is $$$
-
-    msg = f"Hello! Here are my {cuisine} restaurant suggestions for {numOfPeople} people, for today at {diningTime}"
-    n = 1
-    for r in yelp_restaurants:
-        name, address = r['name']['S'], r['address']['S']
-        msg += f"{n}. {name}, located at {address}"
-    
-    msg += "\n\n"
-    msg += "Enjoy your meal!"
-    
-    response = ses_client.send_email(
-        Source=SES_SENDER_EMAIL,
-        Destination={
-            'ToAddresses': [email],
-        },
-        Message={
-            'Subject': {
-                'Data': "Restaurant Suggestions",
-            },
-            'Body': {
-                'Text': {
-                    'Data': msg,
-                }
-            }
-        }
-    )
-
-    print("Sent email response: ", response)
-    return response
-
-
-# Lambda execution starts here
-def lambda_handler(event, context):
-    slots = receive_from_queue()
-    if not slots:
-        return {
-            "statucCode": 200,
-            "body": json.dumps("Something went wrong")
-        }
-    
-    restaurants = search_index(slots["cuisine"])
-    yelp_restaurants = search_dynamodb(restaurants)
-    response = send_email(slots["cuisine"], slots["numOfPeople"], slots["diningTime"], slots['email'], yelp_restaurants)
-
     return response
