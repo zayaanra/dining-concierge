@@ -14,37 +14,30 @@ lexClient = boto3.client('lexv2-runtime')
 
 def lambda_handler(event, context):
     try:
-        sessionID = str(uuid.uuid4())
-
         msg = str(event['messages'][0]['unstructured']['text'])
         
         lexResponse = lexClient.recognize_text(
             botId=BOT_ID,
             botAliasId=BOT_ALIAS_ID,
             localeId="en_US",
-            sessionId=sessionID,
+            sessionId="session",
             text=msg,
         )
-        print("Lex Response: ", lexResponse)
-
+        lexResponseMessages = lexResponse.get('messages', [])
+        
         messages = [
             {
                 "type": "unstructured",
                 "unstructured": {
-                    "id": sessionID,
+                    "id": "id",
                     "text": message['content'],
                     "timestamp": datetime.now().strftime("%d/%m/%Y %H:%M:%S")
                 }
             }
-            for message in lexResponse['messages']
+            for message in lexResponseMessages
         ]
         return {
             "statusCode": 200,
-            "headers": {
-                "Access-Control-Allow-Headers": "Content-Type",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
-            },
             "messages": messages
         }
     except Exception as e:
