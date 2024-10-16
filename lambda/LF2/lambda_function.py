@@ -50,7 +50,7 @@ def receive_from_sqs():
         return slots, receiptHandle
     except Exception as e:
         print(f"Something went wrong: {e}")
-        return None
+        return None, None
 
 # Searches the OpenSearch index for 3 random restaurant IDs given the cuisine
 def search_index(cuisine):
