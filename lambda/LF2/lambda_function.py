@@ -25,7 +25,8 @@ sqs_client = boto3.client('sqs')
 dynamodb_client = boto3.client('dynamodb')
 ses_client = boto3.client('ses')
 
-def receive_from_queue():
+# Polls the SQS Q1 for 1 message. It returns the receipt handle for message deletion and message body
+def receive_from_sqs():
     try:
         response = sqs_client.receive_message(
             QueueUrl=SQS_QUEUE_URL,
@@ -51,7 +52,7 @@ def receive_from_queue():
         print(f"Something went wrong: {e}")
         return None
 
-
+# Searches the OpenSearch index for 3 random restaurant IDs given the cuisine
 def search_index(cuisine):
     try:
         query = {
@@ -85,6 +86,7 @@ def search_index(cuisine):
         print(f"Something went wrong: {e}")
         return None
 
+# Searches DynamoDB for the actual restaurant data through the restaurant IDs provided by the OpenSearch query earlier
 def search_dynamodb(restaurants):
     try:
         keys = []
@@ -108,6 +110,7 @@ def search_dynamodb(restaurants):
     except Exception as e:
         print(f"Something went wrong: {e}")
 
+# Sends the email with the given restaurant data to the given email
 def send_email(cuisine, numOfPeople, diningTime, email, yelp_restaurants):
     try:
         msg = f"Hello! Here are my {cuisine} restaurant suggestions for {numOfPeople} people, for today at {diningTime}\n\n"
@@ -119,8 +122,6 @@ def send_email(cuisine, numOfPeople, diningTime, email, yelp_restaurants):
         
         msg += "\n\n"
         msg += "Enjoy your meal!"
-
-        print(email)
         
         response = ses_client.send_email(
             Source=SES_SENDER_EMAIL,
@@ -151,23 +152,28 @@ def lambda_handler(event, context):
         "statusCode": 500,
         "body": json.dumps("Something went wrong")
     }
-
-    slots, receiptHandle = receive_from_queue()
+    
+    # If we were not able to read from the queue, return 500
+    slots, receiptHandle = receive_from_sqs()
     if not slots:
         return invalidResponse
     
+    # If the OpenSearch index query failed, return 500
     restaurants = search_index(slots["cuisine"])
     if not restaurants:
         return invalidResponse
     
+    # If the DynamoDB search failed, return 500
     yelp_restaurants = search_dynamodb(restaurants)
     if not yelp_restaurants:
         return invalidResponse
     
+    # If the email could not be sent, return 500
     email_response = send_email(slots["cuisine"], slots["numOfPeople"], slots["diningTime"], slots['email'], yelp_restaurants)
     if not email_response:
         return invalidResponse
     
+    # If everything was a success, then we can safely delete the message from the SQS Q
     response = sqs_client.delete_message(
         QueueUrl=SQS_QUEUE_URL,
         ReceiptHandle=receiptHandle

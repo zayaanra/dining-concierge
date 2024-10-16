@@ -10,6 +10,7 @@ SQS_QUEUE_URL = os.getenv("SQS_QUEUE_URL")
 
 sqs_client = boto3.client('sqs')
 
+# Sends message containing dining suggestions slots to SQS Q1
 def send_to_sqs(event):
     slots = event["sessionState"]["intent"]["slots"]
 
@@ -27,6 +28,8 @@ def send_to_sqs(event):
         MessageBody=body
     )
 
+# Validates each slot provided by the user
+# If a slot is invalid, the chatbot will re-elicit the slot value
 def validate_slots(slots):
     if slots["Cuisine"]:
         cuisines = ["Indian", "Mexican", "American"]
@@ -53,7 +56,7 @@ def validate_slots(slots):
 
     return True, "", ""
 
-
+# Prepares a generic response for when an intent has been fulfilled
 def prepareResponse(event, msgText):
     return {
         "sessionState": {
@@ -73,12 +76,7 @@ def prepareResponse(event, msgText):
         ]
     }
 
-def greetUser(event):
-    return prepareResponse(event, "Hi, how can I help you?")
-
-def yourWelcome(event):
-    return prepareResponse(event, "You're welcome.")
-
+# Checks to see if any slots are invalid and if it is, it will prepare a response to re-elicit the invalid slot
 def handleDiningSuggestions(event):
     if event['invocationSource'] == 'DialogCodeHook':
         slots = event['sessionState']['intent']['slots']
@@ -109,21 +107,19 @@ def handleDiningSuggestions(event):
     return ""
 
 def lambda_handler(event, context):
-    print("Event: ", event)
-
+    # Handle the intent accordingly
     intentName = event["sessionState"]["intent"]["name"]
     if intentName == "GreetingIntent":
-        return greetUser(event)
+        return prepareResponse(event, "Hi, how can I help you?")
     elif intentName == "ThankYouIntent":
-        return yourWelcome(event)
+        return prepareResponse(event, "You're welcome.")
     elif intentName == "DiningSuggestionsIntent":
-        # DiningSuggestionsIntent
+        # If there is no proposedNextState, then it means the intent has been fulfilled
         if "proposedNextState" not in event:
-            # Intent has been fulfilled. Send message to Q1.
             send_to_sqs(event)
             return prepareResponse(event, "You're all set. Expect my suggestions shortly! Have a good day.")
         else:
-            # Intent is still not fulfilled. Validate the current slot and continue elicitation.
+            # The intent has not yet been fulfilled, so we will check if the current slot is valid and re-elicit if necessary
             response = {
                 "statusCode": 200,
                 "sessionState": event['sessionState'],
@@ -136,4 +132,5 @@ def lambda_handler(event, context):
             
             return response
     else:
+        # Fallback intent
         return prepareResponse(event, "I'm sorry. I didn't recognize that. Please try again.")

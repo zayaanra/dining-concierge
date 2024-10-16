@@ -1,6 +1,5 @@
 import boto3
 import os
-import uuid
 import json
 
 from datetime import datetime
@@ -16,6 +15,8 @@ def lambda_handler(event, context):
     try:
         msg = str(event['messages'][0]['unstructured']['text'])
         
+        # Send a message to the Lex chatbot
+        # It should receive a valid response which is sent to the frontend to display
         lexResponse = lexClient.recognize_text(
             botId=BOT_ID,
             botAliasId=BOT_ALIAS_ID,
@@ -25,6 +26,8 @@ def lambda_handler(event, context):
         )
         lexResponseMessages = lexResponse.get('messages', [])
         
+        # Prepare the list of messages to return to the frontend
+        # The number of messages should always be <= 1
         messages = [
             {
                 "type": "unstructured",
